@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "benscar",
+    "password": null,
+    "database": "todolist_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "benscar",
+    "password": null,
+    "database": "todolist_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "benscar",
+    "password": null,
+    "database": "todolist_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

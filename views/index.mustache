@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home | ToDoList.com</title>
+  </head>
+  <body>
+
+    <div class="input_todo">
+    <form action="/" method="post" class="input_todo_form">
+    <input type="text" name="input_todo_box" placeholder="Add todo..."><button type="submit">SUBMIT</button>
+    </form>
+    </div>
+
+    <div class="todolist">
+    {{#todo_items}}
+    <form action="/markcomplete/{{id}}" method="post" class="complete_todo_form">
+    <button type="submit">MARK COMPLETE</button>{{todo}}{{id}}
+    </form>
+    {{/todo_items}}
+    </div>
+
+    <div class="completed_todos">
+    <h2>Completed Tasks: <form action="/deleteall" method="post"><button type="submit">DELETE ALL</button></form></h2>
+    {{#completed_items}}
+    {{todo}} {{id}}<br>
+    {{/completed_items}}
+    </div>
+
+  </body>
+</html>
